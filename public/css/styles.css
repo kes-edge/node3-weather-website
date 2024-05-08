@@ -1,0 +1,92 @@
+/* Define a modern and cohesive color palette and font properties */
+:root {
+    --primary-bg-color: #f0f4f8; /* Soft light blue background */
+    --accent-color: #0066cc; /* Vibrant blue for headers and important elements */
+    --text-color: #333333; /* Dark gray for better readability */
+    --header-font-family: 'Montserrat', sans-serif; /* Modern and clean font */
+    --base-font-family: 'Roboto', sans-serif; /* Widely used modern font */
+    --primary-font-size: 16px; /* Ideal for readability */
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    font-family: var(--base-font-family);
+    font-size: var(--primary-font-size);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: var(--accent-color);
+    font-family: var(--header-font-family);
+    margin: 0.5em 0;
+}
+
+h1 {
+    font-size: 2.5em; /* Larger size for main headings */
+}
+
+h2 {
+    font-size: 2em;
+    opacity: 0.9; /* Slightly less emphasis than h1 */
+}
+
+img {
+    max-width: 100%; /* Responsive width */
+    height: auto; /* Maintain aspect ratio */
+}
+.modern-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.modern-input {
+    width: 100%; /* Full-width to fit container */
+    padding: 8px 15px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333; /* Dark gray color for text */
+    background-color: #fff; /* White background */
+    border: 2px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box; /* Includes padding and border in the element's total width and height */
+    outline: none; /* Removes the default focus outline */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transitions for focus and hover effects */
+}
+
+/* Hover style */
+.modern-input:hover {
+    border-color: #888; /* Darker border on hover */
+}
+
+/* Focus style */
+.modern-input:focus {
+    border-color: #0066cc; /* Blue border for focus */
+    box-shadow: 0 0 5px rgba(0, 102, 204, 0.5); /* Blue glow effect */
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh; /* This makes the div full viewport height */
+    text-align: center; /* This centers the text inside the flex container */
+}
+
+form {
+    display: flex;
+    flex-direction: column;  /* Stack the input and button vertically */
+    align-items: center;     /* Center-align the items horizontally */
+    gap: 10px;               /* Space between each form item */
+}
